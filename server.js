@@ -6,11 +6,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(express.json());
-
-const corsOptions = {
-    origin: 'http://localhost/3000'
-}
-app.use(cors(corsOptions));
+app.use(cors());
 
 const db = {
     users: [
